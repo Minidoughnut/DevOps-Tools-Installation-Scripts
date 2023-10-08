@@ -44,24 +44,24 @@ Our repository includes installation scripts for a variety of common DevOps tool
 
 * Git: :octocat: - A distributed version control system.
 * Docker: :whale: - A platform for developing, shipping, and running applications in containers.
-* Kubernetes: :ship: - Anopen-source container orchestration platform.
-Jenkins: :building_construction: -An open-source automation server for building, testing, and deploying code.
-Ansible: :robot: - Ansible is an open-source automation tool for configuration management and application deployment.
-Terraform: :earth_americas: - Terraform is an infrastructure as code (IaC) tool for building, changing, and versioning infrastructure efficiently.
-Chef: :chef: - Chef is an automation platform for managing infrastructure as code.
-Puppet: :puppet: - Puppet is a configuration management and automation tool.
-Prometheus: :bar_chart: - Prometheus is an open-source monitoring and alerting toolkit.
-Grafana: :chart_with_upwards_trend: - Grafana is an open-source analytics and monitoring platform.
-AWS CLI: :cloud: - The AWS Command Line Interface (CLI) is a tool to manage AWS services.
-Azure CLI: :cloud: - The Azure Command Line Interface (CLI) is a tool to manage Azure resources.
-CircleCI: :white_circle: - CircleCI is a continuous integration and continuous delivery (CI/CD) platform.
-Travis CI: :rocket: - Travis CI is a cloud-based CI/CD platform.
-Jira: :bug: - Jira is a popular issue and project tracking tool.
-Slack: :speech_balloon: - Slack is a team collaboration and messaging platform.
-GitLab: :orange_book: - GitLab is a web-based Git repository manager and CI/CD platform.
-Bitbucket: :blue_book: - Bitbucket is a web-based platform for code collaboration.
-New Relic: :chart: - New Relic is an application performance monitoring tool.
-ELK Stack: :elephant: - The ELK Stack (Elasticsearch, Logstash, Kibana) is a set of tools for log and data analytics.
+* Kubernetes: :wheel_of_dharma: - An open-source container orchestration platform.
+* Jenkins: :jenkins: -An open-source automation server for building, testing, and deploying code.
+* Ansible: :robot: - Ansible is an open-source automation tool for configuration management and application deployment.
+* Terraform: :earth_americas: - Terraform is an infrastructure as code (IaC) tool for building, changing, and versioning infrastructure efficiently.
+* Chef: :chef: - Chef is an automation platform for managing infrastructure as code.
+* Puppet: :puppet: - Puppet is a configuration management and automation tool.
+* Prometheus: :bar_chart: - Prometheus is an open-source monitoring and alerting toolkit.
+* Grafana: :chart_with_upwards_trend: - Grafana is an open-source analytics and monitoring platform.
+* AWS CLI: :cloud: - The AWS Command Line Interface (CLI) is a tool to manage AWS services.
+* Azure CLI: :cloud: - The Azure Command Line Interface (CLI) is a tool to manage Azure resources.
+* CircleCI: :white_circle: - CircleCI is a continuous integration and continuous delivery (CI/CD) platform.
+* Travis CI: :rocket: - Travis CI is a cloud-based CI/CD platform.
+* Jira: :bug: - Jira is a popular issue and project tracking tool.
+* Slack: :speech_balloon: - Slack is a team collaboration and messaging platform.
+* GitLab: :orange_book: - GitLab is a web-based Git repository manager and CI/CD platform.
+* Bitbucket: :blue_book: - Bitbucket is a web-based platform for code collaboration.
+* New Relic: :chart: - New Relic is an application performance monitoring tool.
+* ELK Stack: :elephant: - The ELK Stack (Elasticsearch, Logstash, Kibana) is a set of tools for log and data analytics.
 You can add these emojis to your README.md list to make it visually appealing and engaging for users.
 
 Tool 1: Description of Tool 1.
@@ -76,11 +76,17 @@ Each tool's directory contains an `install.sh` script and a `README.md` file wit
 We welcome contributions from the DevOps community. If you have an installation script for a DevOps tool not covered in this repository or want to improve existing scripts, please follow these steps:
 
 **1. Fork this repository.**
+
 **2. Create a new branch for your contribution: `git checkout -b feature/new-tool`**
+
 **3. Add your installation script to the appropriate directory.**
+
 **4. Update the README with information about the new tool.**
+
 **5. Commit your changes: git commit -m "Add support for Tool X"**
+
 **7. Create a pull request, detailing your changes.**
+
 Our team will review your contribution, and once accepted, it will be merged into the main branch.
 
 
