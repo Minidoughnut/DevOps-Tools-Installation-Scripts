@@ -109,3 +109,9 @@ check_jenkins() {
 
 # Run the script
 check_jenkins
+
+
+echo " To complement other security measures"
+echo "Remember to set a strong password for Jenkins admin account"
+echo "Implement firewall rules to restrict access to Jenkins web interface. Allow access only from trusted IP."
+echo "You may change the default port number for Jenkins from 8080."
