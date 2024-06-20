@@ -83,7 +83,7 @@ install_docker_centos_rhel() {
     sudo usermod -aG docker $USER
 
      # Add the Jenkins user to the docker group
-    sudo usermod -aG jenkins $USER
+    sudo usermod -aG docker jenkins 
 
     clear
     echo "Docker Engine and Docker Compose installed."
