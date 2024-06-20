@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Function to install Docker on Ubuntu or Debian
 install_docker_ubuntu_debian() {
     # Check if Docker is already installed
     if command -v docker &>/dev/null; then
@@ -23,8 +24,10 @@ install_docker_ubuntu_debian() {
         curl \
         software-properties-common
 
+    # Add Docker’s official GPG key
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-
+  
+    # Set up the stable repository
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
     # 2. Install Docker Engine
@@ -42,6 +45,8 @@ install_docker_ubuntu_debian() {
     echo "Restarting Docker service..."
     echo
     sleep 10
+
+    # Restart Docker service
     sudo systemctl start docker
     sudo systemctl enable docker
     sudo systemctl restart docker
@@ -51,12 +56,14 @@ install_docker_ubuntu_debian() {
     echo "Try running 'docker ps' to check if it's working."
 }
 
+# Function to install Docker on CentOS or RHEL
 install_docker_centos_rhel() {
     # Check if Docker is already installed
     if command -v docker &>/dev/null; then
         echo "Docker is already installed."
         read -p "Do you want to uninstall the previous Docker version? (y/n): " check_ans
         if [ "$check_ans" = "y" ]; then
+            # Remove existing Docker packages
             sudo yum remove -y docker-ce docker-ce-cli containerd.io
             sudo rm -rf /var/lib/docker
         else
@@ -92,6 +99,7 @@ install_docker_centos_rhel() {
     echo "Try running 'docker ps' to check if it's working."
 }
 
+# Determine the distribution and call the appropriate function
 if [ -f /etc/debian_version ]; then
     echo "Distribution is Ubuntu or Debian."
     install_docker_ubuntu_debian
