@@ -34,6 +34,9 @@ install_docker_ubuntu_debian() {
     # Add the current user to the docker group
     sudo usermod -aG docker $USER
 
+     # Add the Jenkins user to the docker group
+    sudo usermod -aG docker jenkins
+
     clear
     echo "Docker Engine and Docker Compose installed."
     echo "Restarting Docker service..."
@@ -71,6 +74,9 @@ install_docker_centos_rhel() {
 
     # Add the current user to the docker group
     sudo usermod -aG docker $USER
+
+     # Add the Jenkins user to the docker group
+    sudo usermod -aG jenkins $USER
 
     clear
     echo "Docker Engine and Docker Compose installed."
